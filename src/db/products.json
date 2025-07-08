@@ -1,0 +1,75 @@
+[
+     {
+         "id": 160585,
+         "title": "iPhone 9",
+         "image": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
+         "slug": "iphone-9",
+         "description": "An apple mobile which is nothing like apple",
+         "quantity": 91,
+         "tags": "apple, smartphone",
+         "created_at": "2025-02-23T08:55:40.000000Z",
+         "btn_text": "Add to Cart",
+         "price": 549
+     },
+     {
+         "id": 131967,
+         "title": "iPhone X",
+         "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
+         "slug": "iphone-x",
+         "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
+         "quantity": 99,
+         "tags": "Apple, iPhone",
+         "created_at": "2024-11-24T05:27:14.000000Z",
+         "btn_text": "Add to Cart",
+         "price": 899
+     },
+     {
+         "id": 163027,
+         "title": "Samsung Universe 9",
+         "image": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
+         "slug": "samsung-universe-9",
+         "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+         "quantity": 40,
+         "tags": "Samsung",
+         "created_at": "2025-03-04T04:29:50.000000Z",
+         "btn_text": "Add to Cart",
+         "price": 1249
+     },
+     {
+         "id": 124889,
+         "title": "OPPOF19",
+         "image": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
+         "slug": "oppof19",
+         "description": "OPPO F19 is officially announced on April 2021.",
+         "quantity": 23,
+         "tags": "OPPO",
+         "created_at": "2024-11-02T04:39:28.000000Z",
+         "btn_text": "Add to Cart",
+         "price": 280
+     },
+     {
+         "id": 124890,
+         "title": "Huawei P30",
+         "image": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
+         "slug": "huawei-p30",
+         "description": "Huawei's re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
+         "quantity": 73,
+         "tags": "Huawei",
+         "created_at": "2024-11-02T04:39:28.000000Z",
+         "btn_text": "Add to Cart",
+         "price": 499
+     },
+     {
+         "id": 124891,
+         "title": "MacBook Pro",
+         "image": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
+         "slug": "macbook-pro",
+         "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+         "quantity": 4,
+         "tags": "Apple, MacBook",
+         "created_at": "2024-11-02T04:39:28.000000Z",
+         "btn_text": "Add to Cart",
+         "price": 1749
+     }
+ ]
+ 
