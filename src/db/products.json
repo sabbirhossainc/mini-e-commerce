@@ -1,75 +1,98 @@
 [
-     {
-         "id": 160585,
-         "title": "iPhone 9",
-         "image": "https://cdn.dummyjson.com/product-images/1/thumbnail.jpg",
-         "slug": "iphone-9",
-         "description": "An apple mobile which is nothing like apple",
-         "quantity": 91,
-         "tags": "apple, smartphone",
-         "created_at": "2025-02-23T08:55:40.000000Z",
-         "btn_text": "Add to Cart",
-         "price": 549
-     },
-     {
-         "id": 131967,
-         "title": "iPhone X",
-         "image": "https://cdn.dummyjson.com/product-images/2/thumbnail.jpg",
-         "slug": "iphone-x",
-         "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-         "quantity": 99,
-         "tags": "Apple, iPhone",
-         "created_at": "2024-11-24T05:27:14.000000Z",
-         "btn_text": "Add to Cart",
-         "price": 899
-     },
-     {
-         "id": 163027,
-         "title": "Samsung Universe 9",
-         "image": "https://cdn.dummyjson.com/product-images/3/thumbnail.jpg",
-         "slug": "samsung-universe-9",
-         "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
-         "quantity": 40,
-         "tags": "Samsung",
-         "created_at": "2025-03-04T04:29:50.000000Z",
-         "btn_text": "Add to Cart",
-         "price": 1249
-     },
-     {
-         "id": 124889,
-         "title": "OPPOF19",
-         "image": "https://cdn.dummyjson.com/product-images/4/thumbnail.jpg",
-         "slug": "oppof19",
-         "description": "OPPO F19 is officially announced on April 2021.",
-         "quantity": 23,
-         "tags": "OPPO",
-         "created_at": "2024-11-02T04:39:28.000000Z",
-         "btn_text": "Add to Cart",
-         "price": 280
-     },
-     {
-         "id": 124890,
-         "title": "Huawei P30",
-         "image": "https://cdn.dummyjson.com/product-images/5/thumbnail.jpg",
-         "slug": "huawei-p30",
-         "description": "Huawei's re-badged P30 Pro New Edition was officially unveiled yesterday in Germany and now the device has made its way to the UK.",
-         "quantity": 73,
-         "tags": "Huawei",
-         "created_at": "2024-11-02T04:39:28.000000Z",
-         "btn_text": "Add to Cart",
-         "price": 499
-     },
-     {
-         "id": 124891,
-         "title": "MacBook Pro",
-         "image": "https://cdn.dummyjson.com/product-images/6/thumbnail.png",
-         "slug": "macbook-pro",
-         "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
-         "quantity": 4,
-         "tags": "Apple, MacBook",
-         "created_at": "2024-11-02T04:39:28.000000Z",
-         "btn_text": "Add to Cart",
-         "price": 1749
-     }
- ]
- 
+    {
+        "id": 160585,
+        "title": "Essence Mascara Lash Princess",
+        "image": "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp",
+        "slug": "BEA-ESS-ESS-001",
+        "description": "The Essence Mascara Lash Princess is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+        "quantity": 91,
+        "stock": 94,
+        "tags": [
+            "beauty",
+            "mascara"
+        ],
+        "created_at": "2025-02-23T08:55:40.000000Z",
+        "btn_text": "Add to Cart",
+        "price": 549
+    },
+    {
+        "id": 131967,
+        "title": "Eyeshadow Palette with Mirror",
+        "image": "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/thumbnail.webp",
+        "slug": "BEA-GLA-EYE-002",
+        "description": "The Eyeshadow Palette with Mirror offers a versatile range of eyeshadow shades for creating stunning eye looks. With a built-in mirror, it's convenient for on-the-go makeup application.",
+        "quantity": 99,
+        "stock": 34,
+        "tags": [
+            "beauty",
+            "eyeshadow"
+        ],
+        "created_at": "2024-11-24T05:27:14.000000Z",
+        "btn_text": "Add to Cart",
+        "price": 899
+    },
+    {
+        "id": 163027,
+        "title": "Powder Canister",
+        "image": "https://cdn.dummyjson.com/product-images/beauty/powder-canister/thumbnail.webp",
+        "slug": "BEA-VEL-POW-003",
+        "description": "The Powder Canister is a finely milled setting powder designed to set makeup and control shine. With a lightweight and translucent formula, it provides a smooth and matte finish.",
+        "quantity": 40,
+        "stock": 36,
+        "tags": [
+            "beauty",
+            "face powder"
+        ],
+        "created_at": "2025-03-04T04:29:50.000000Z",
+        "btn_text": "Add to Cart",
+        "price": 1249
+    },
+    {
+        "id": 124889,
+        "title": "Red Lipstick",
+        "image": "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/thumbnail.webp",
+        "slug": "BEA-CHI-LIP-004",
+        "description": "The Red Lipstick is a classic and bold choice for adding a pop of color to your lips. With a creamy and pigmented formula, it provides a vibrant and long-lasting finish.",
+        "quantity": 23,
+        "stock": 123,
+        "tags": [
+            "beauty",
+            "lipstick"
+        ],
+        "created_at": "2024-11-02T04:39:28.000000Z",
+        "btn_text": "Add to Cart",
+        "price": 280
+    },
+    {
+        "id": 124890,
+        "title": "Red Nail Polish",
+        "image": "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/thumbnail.webp",
+        "slug": "BEA-NAI-NAI-005",
+        "description": "The Red Nail Polish offers a rich and glossy red hue for vibrant and polished nails. With a quick-drying formula, it provides a salon-quality finish at home.",
+        "quantity": 73,
+        "stock": 32,
+        "tags": [
+            "beauty",
+            "nail polish"
+        ],
+        "created_at": "2024-11-02T04:39:28.000000Z",
+        "btn_text": "Add to Cart",
+        "price": 499
+    },
+    {
+        "id": 124891,
+        "title": "Calvin Klein CK One",
+        "image": "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/thumbnail.webp",
+        "slug": "FRA-CAL-CAL-006",
+        "description": "CK One by Calvin Klein is a classic unisex fragrance, known for its fresh and clean scent. It's a versatile fragrance suitable for everyday wear.",
+        "quantity": 4,
+        "stock": 83,
+        "tags": [
+            "fragrances",
+            "perfumes"
+        ],
+        "created_at": "2024-11-02T04:39:28.000000Z",
+        "btn_text": "Add to Cart",
+        "price": 1749
+    }
+]
