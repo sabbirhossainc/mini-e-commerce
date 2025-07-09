@@ -9,7 +9,7 @@ const Footer = () => {
             <Link to="/" className="text-2xl font-bold mb-4 block">
               E.SHOP
             </Link>
-            <p className="text-[var(--primary)] mb-4">
+            <p className="text-[var(--primary)] mix-blend-color-burn mb-4">
               We have elegant products which <br /> you're proud to Buy.
             </p>
           </div>

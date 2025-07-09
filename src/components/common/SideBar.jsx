@@ -1,11 +1,23 @@
+import { useEffect } from "react";
 import { useCart } from "../../hooks/useCart";
 import SideBarContent from "../SideBarContent";
 
 const SideBar = () => {
   const { setOpenSideBar, openSideBar } = useCart();
 
+  useEffect(() => {
+    if (openSideBar) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [openSideBar]);
+
   return (
-    <div className="overflow-hidden">
+    <div className="">
       {openSideBar && (
         <div
           className="fixed inset-0 z-10 opacity-25 bg-black transition-opacity duration-200"
@@ -15,10 +27,10 @@ const SideBar = () => {
 
       <div
         className={`fixed top-0 right-0 z-20 h-full w-auto bg-[var(--secondary)] shadow-xl transition-all duration-200 ease-in-out ${
-          openSideBar ? "translate-x-10" : "translate-x-full"
+          openSideBar ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex flex-col h-full w-96 overflow-y-auto p-4"><SideBarContent/></div>
+        <SideBarContent />
       </div>
     </div>
   );

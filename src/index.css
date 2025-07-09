@@ -5,9 +5,8 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --primary: #EEEEEE;
+  --primary: #5a5a5a;
   --secondary: #219B9D;
-  --highlight: #646cff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -20,11 +19,6 @@ body {
   padding: 0;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
 button,
 a {
   cursor: pointer;
@@ -32,5 +26,5 @@ a {
 }
 button:hover,
 a:hover {
-  color: var(--highlight);
+  color: var(--secondary);
 }

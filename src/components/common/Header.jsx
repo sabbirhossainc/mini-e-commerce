@@ -24,8 +24,8 @@ const Header = () => {
             <div className="relative p-1">
               <Cart />
               {state?.cartList?.length > 0 && (
-                <div className="absolute bg-amber-300 rounded-full size-4 text-xs bottom-0 right-0">
-                  {state?.cartList?.length}
+                <div className="absolute bg-[var(--secondary)] text-gray-50 rounded-full size-4 text-xs bottom-0 right-0">
+                  {state?.cartList?.length} 
                 </div>
               )}
             </div>

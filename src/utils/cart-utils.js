@@ -62,6 +62,6 @@ export const updateSummary = (state) => {
   };
 };
 
-export const getProductDetails = async (state, productSlug) => {
+export const getProductDetails = (state, productSlug) => {
   return state?.products?.find((item) => item.slug === productSlug);
 };
