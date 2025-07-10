@@ -30,7 +30,7 @@ const SideBarContent = () => {
         {isProductInBag && (
           <div className="flex justify-between font-bold text-lg pt-2 border-t border-gray-200">
             <span>Total</span>
-            <span>${summary?.total}</span>
+            <span>৳ {summary?.total}</span>
           </div>
         )}
         <CheckoutButton />

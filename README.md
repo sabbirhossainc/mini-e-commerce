@@ -4,7 +4,7 @@ A modern, responsive Single Page Application (SPA) built with **React.js** to si
 
 ## 🚀 Live Demo
 
-🔗 [Live Website](https://mini-e-commerce.netlify.app)
+🔗 [Live Website](https://my-mini-e-commerce.netlify.app/)
 
 ## 📂 GitHub Repository
 
