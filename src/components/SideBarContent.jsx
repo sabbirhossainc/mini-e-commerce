@@ -1,5 +1,7 @@
 import { useCart } from "../hooks/useCart";
+import { usePortal } from "../hooks/usePortal";
 import CartItem from "./CartItem";
+import CheckoutModal from "./modal/CheckoutModal";
 
 const SideBarContent = () => {
   const { state } = useCart();
@@ -15,7 +17,7 @@ const SideBarContent = () => {
             <CartItem key={item.id} product={item} />
           ))
         ) : (
-          <p className="text-gray-900 text-xl text-center">
+          <p className="text-gray-50 text-xl text-center">
             Your cart is empty!
           </p>
         )}
@@ -28,8 +30,19 @@ const SideBarContent = () => {
 export default SideBarContent;
 
 const CheckoutButton = () => {
+  const { setOpenSideBar } = useCart();
+  const { open } = usePortal();
+
+  const handleModal = () => {
+    open(<CheckoutModal />);
+    setOpenSideBar(false);
+  };
+
   return (
-    <button className="mt-auto inline-flex items-center justify-center bg-gray-900 text-amber-50 text-center py-2 px-3 rounded-md w-full gap-x-2">
+    <button
+      className="mt-auto inline-flex items-center justify-center bg-gray-900 text-amber-50 text-center py-2 px-3 rounded-md w-full gap-x-2"
+      onClick={handleModal}
+    >
       <span>Go to Checkout</span>
       <span>&#8618;</span>
     </button>

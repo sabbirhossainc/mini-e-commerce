@@ -6,7 +6,7 @@
   font-weight: 400;
 
   --primary: #5a5a5a;
-  --secondary: #219B9D;
+  --secondary: #219b9d;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,6 +19,14 @@ body {
   padding: 0;
 }
 
+@view-transition {
+  navigation: auto;
+}
+
+.use-backdrop {
+  @apply backdrop-opacity-75 backdrop-brightness-75 bg-black/25 transition-all duration-500 delay-150 ease-in-out;
+}
+
 button,
 a {
   cursor: pointer;
@@ -27,4 +35,24 @@ a {
 button:hover,
 a:hover {
   color: var(--secondary);
+}
+
+.form-input {
+  @apply w-full px-2.5 py-2 border border-[var(--primary)] font-normal text-sm rounded-sm
+}
+
+.form-input:focus {
+  @apply outline-none border border-[var(--secondary)]
+}
+
+.chekout-button {
+  @apply w-full text-amber-50 px-1 py-2 bg-[var(--secondary)] font-medium text-sm rounded-sm transition-colors duration-200
+}
+
+.chekout-button:hover {
+  @apply hover:bg-[var(--primary)]/20
+}
+
+.chekout-button:disabled {
+  @apply cursor-not-allowed bg-[var(--primary)]/40
 }

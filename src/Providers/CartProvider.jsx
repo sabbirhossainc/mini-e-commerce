@@ -12,11 +12,15 @@ export default function CartProvider({ children }) {
   const [state, dispatch] = useReducer(cartReducer, initialState);
   const [openSideBar, setOpenSideBar] = useState(false);
 
+  const stateList = {
+    state,
+    dispatch,
+    actionTypes,
+    setOpenSideBar,
+    openSideBar,
+  };
+
   return (
-    <CartContext.Provider
-      value={{ state, dispatch, actionTypes, setOpenSideBar, openSideBar }}
-    >
-      {children}
-    </CartContext.Provider>
+    <CartContext.Provider value={stateList}>{children}</CartContext.Provider>
   );
 }

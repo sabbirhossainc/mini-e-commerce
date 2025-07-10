@@ -65,3 +65,7 @@ export const updateSummary = (state) => {
 export const getProductDetails = (state, productSlug) => {
   return state?.products?.find((item) => item.slug === productSlug);
 };
+
+export const getCartProductDetails = (state, productId) => {
+  return state?.cartList?.find((item) => item.id === productId);
+};

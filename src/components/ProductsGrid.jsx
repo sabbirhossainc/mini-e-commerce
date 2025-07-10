@@ -9,7 +9,7 @@ const ProductsGrid = () => {
     state?.products?.length > 0 &&
     state.products.map((product) => (
       <div
-        className="bg-gray-100 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300"
+        className="flex flex-col justify-between bg-gray-100 rounded-lg overflow-hidden transition-transform hover:scale-[1.02] duration-300"
         key={product.id}
       >
         <Link to={`product-details/${product.slug}`}>
@@ -21,7 +21,7 @@ const ProductsGrid = () => {
             />
           </div>
           <div className="p-4">
-            <div className="flex items-center justify-between">
+            <div className="flex items-center justify-between gap-x-1.5">
               <h3 className="font-medium">{product.title}</h3>
               <span className="text-xs text-gray-700">
                 ({product.stock} pcs left)

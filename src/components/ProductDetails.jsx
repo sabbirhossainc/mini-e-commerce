@@ -1,11 +1,21 @@
 import { useCart } from "../hooks/useCart";
-import { handleAddRemove } from "../utils/cart-utils";
+import {
+  getCartProductDetails,
+  handleAddRemove,
+  handleMinus,
+  handlePlus,
+} from "../utils/cart-utils";
 
 const ProductDetails = ({ product }) => {
-  const { dispatch } = useCart();
-  
-  const { image, price, stock, tags, title, description, btn_text, inCart } =
+  const { state, dispatch } = useCart();
+
+  const { id, image, price, stock, tags, title, description, btn_text } =
     product || {};
+
+  const { inCart, qty } = getCartProductDetails(state, id) || {
+    inCart: false,
+    qty: 0,
+  };
 
   return (
     <div className="flex flex-col my-6">
@@ -48,13 +58,35 @@ const ProductDetails = ({ product }) => {
               )}
             </div>
           </div>
-          <div className="w-auto">
+
+          <div className="flex justify-start items-center gap-x-2.5">
+            {inCart && (
+              <>
+                <p className="font-bold text-[var(--secondary)]">
+                  ৳ {price * qty}
+                </p>
+                <div className="flex items-center space-x-2">
+                  <button
+                    className="size-6 bg-gray-100 rounded flex items-center justify-center cursor-pointer"
+                    onClick={(e) => handleMinus(e, product, dispatch)}
+                  >
+                    &#45;
+                  </button>
+                  <span className="text-sm">{product.qty}</span>
+                  <button
+                    className="size-6 bg-gray-100 rounded flex items-center justify-center cursor-pointer"
+                    onClick={(e) => handlePlus(e, product, dispatch)}
+                  >
+                    &#43;
+                  </button>
+                </div>
+              </>
+            )}
             <button
-              className={`disabled:bg-gray-700 disabled:text-gray-400 disabled:cursor-not-allowed w-full md:w-1/2 ${
+              className={`w-full md:w-1/2 ${
                 inCart ? "bg-red-600" : "bg-gray-800"
               } py-1 text-gray-100 rounded flex items-center justify-center active:translate-y-1 duration-200 transition-all active:bg-gray-900`}
               onClick={(e) => handleAddRemove(e, product, dispatch)}
-              disabled={stock === 0}
             >
               {btn_text}
             </button>

@@ -15,9 +15,9 @@ const CartItem = ({ product }) => {
       </div>
       <div className="flex-grow">
         <div className="flex justify-between">
-          <h3 className="font-medium">{product.title}</h3>
+          <h3 className="font-medium text-amber-50">{product.title}</h3>
           <span
-            className="text-red-500 text-sm cursor-pointer"
+            className="text-gray-950 hover:text-red-500 text-xl cursor-pointer"
             onClick={(e) => handleRemove(e, product, dispatch)}
           >
             &#735;
