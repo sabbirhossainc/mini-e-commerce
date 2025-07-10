@@ -46,17 +46,14 @@ export const handleAddRemove = (e, product, dispatch) => {
 };
 
 export const updateSummary = (state) => {
-  const deliveryFee = 40;
-
   const subtotal = state.cartList.reduce(
     (total, item) => total + Number(item.price) * Number(item.qty),
     0
   );
 
-  const total = Math.round(subtotal + deliveryFee);
+  const total = Math.round(subtotal);
 
   return {
-    deliveryFee,
     subtotal,
     total,
   };

@@ -1,12 +1,145 @@
-# React + Vite
+# 🛍️ React E-commerce SPA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive Single Page Application (SPA) built with **React.js** to simulate an e-commerce storefront with basic cart and checkout functionalities.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 [Live Website](https://mini-e-commerce.netlify.app)
 
-## Expanding the ESLint configuration
+## 📂 GitHub Repository
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+🔗 [GitHub Repo](https://github.com/sabbirhossainc/mini-e-commerce.git)
+
+---
+
+## 📌 Features
+
+- ⚛️ Built with React.js
+- 📱 Responsive design using Flexbox and CSS Grid
+- 🛒 Cart management with quantity controls
+- 🧾 Product detail view
+- 💳 Simulated checkout process using a modal
+- 🎯 SPA (Single Page Application) experience
+- 🌐 Deployed on Netlify
+
+---
+
+## 🖥️ Pages Overview
+
+### 1. Home Page
+
+- Displays 6 dummy products.
+- Each product card includes:
+  - Image
+  - Title
+  - Price
+  - "Add to Cart" button
+- Clicking on a product navigates to its detailed view.
+
+### 2. Product Detail Page
+
+- Full product details including:
+  - Product image
+  - Title
+  - Description
+  - Price
+- "Add to Cart" button
+
+### 3. Cart Sidebar
+
+- Slide-in/out sidebar with:
+  - List of added products
+  - Quantity increment/decrement controls
+  - Total price summary
+  - "Checkout" button
+
+### 4. Checkout Modal
+
+- Appears when clicking “Checkout”
+- Form fields:
+  - Name
+  - Email
+  - Address
+- Simulated order placement
+
+---
+
+## 🛠️ Tech Stack
+
+- **React.js** – Frontend framework
+- **React Router DOM** – Routing management
+- **TailwindCSS** – Styling
+- **React Context API** – Global state management for cart
+- **Vite**
+
+---
+
+## 📥 How to Run Locally
+
+1. **Clone the Repository**
+
+```bash
+git clone https://github.com/sabbirhossainc/mini-e-commerce.git
+cd mini-e-commerce
+```
+
+2. **Install Dependencies**
+
+```bash
+npm install
+```
+
+3. **Run the Development Server**
+
+```bash
+npm run dev
+```
+
+Open in Browser
+Navigate to http://localhost:5173 (Vite)
+
+---
+
+## 📁 Project Structure
+
+```bash
+src/
+├── components/ # Reusable components (Navbar, ProductCard, CartSidebar, etc.)
+| ├── common/ # Reusable components (Field, Footer, Sidebar, etc.)
+| | ├── Field.jsx
+| | ├── Footer.jsx
+| | ├── Header.jsx
+| | ├── ProductGrid.jsx
+| | └── SideBar.jsx
+| ├── forms/ # Checkout form
+| | └── CheckoutForm.jsx
+| ├── modal/ # Modal Components
+| | └── CheckoutModal.jsx
+| ├── CartItem.jsx
+| ├── ProductDetails.jsx
+| ├── ProductGrid.jsx
+| └── SideBarContent.jsx
+├── contexts/
+| └── index.js
+├── db/
+| └── product.json
+├── pages/
+| ├── HomePage.js
+| └── ProductDetailsPage.jsx
+├── hooks/
+| ├── index.js
+| ├── useCart.js
+| ├── useClickOutside.js
+| └── usePortal.js
+├── Providers/
+| ├── CartProvider.jsx
+| └── PortalProvider.jsx
+├── Routes/
+| └── Layout.jsx
+├── utils/
+| ├── cart-utils.jsx
+| └── svgs.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
