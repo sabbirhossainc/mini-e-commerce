@@ -122,7 +122,7 @@ src/
 ├── contexts/
 | └── index.js
 ├── db/
-| └── product.json
+| └── products.json
 ├── pages/
 | ├── HomePage.js
 | └── ProductDetailsPage.jsx
